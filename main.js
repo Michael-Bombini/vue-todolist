@@ -58,6 +58,8 @@ const sliderVue = new Vue({
             }
             else
                 return
+
+            this.testoNuovoTodo = "";
         },
 
         rimuoviTodo: function (indice) {
