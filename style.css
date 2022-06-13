@@ -1,6 +1,23 @@
+body {
+    background-image: linear-gradient(#EFB4C2, #A77AC8);
+}
+
 .todo {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+
+.list-group {
+    border-radius: 0;
+}
+
+.bottone {
+    background-color: #FFBA74;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-weight: bold;
 }

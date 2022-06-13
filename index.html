@@ -13,12 +13,25 @@
     
     <div id="app">
         <div class="container todo">
+
+
             <ul class="list-group w-50">
-                <li class="list-group-item d-flex justify-content-between" :class="{'text-decoration-line-through' : task.done}" v-for="(task,i) in toDoList">{{task.text}}
-                    <input v-model="task.done" class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <li class="list-group-item d-flex justify-content-between my-1" 
+                :class="{'text-decoration-line-through' : task.done}" 
+                v-for="(task,i) in toDoList">{{task.text}}
+                    <input v-model="task.done" class="form-check-input rounded-circle ordine-2" type="checkbox" value="" id="flexCheckChecked" checked>
                 </li>
+
+                <div class="form-floating my-5">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Inserisci nuovo todo" v-model="testoNuovoTodo">
+                    <label for="floatingInput">Nuovo todo...</label>
+                    <button class="bottone my-3" @click="aggiungiTodo()">Aggiungi nuovo todo</button>
+                  </div>
+
+
             </ul>
         </div>
+        
     </div>
 
 

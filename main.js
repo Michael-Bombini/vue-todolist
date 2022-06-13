@@ -38,15 +38,29 @@ const sliderVue = new Vue({
                 text: "Andare in vacanza",
                 done: false,
             },
+        ],
 
-
-
-
-        ]
+        testoNuovoTodo: ""
 
     },
 
-    methods: {},
+    methods: {
+
+        aggiungiTodo: function () {
+
+            const testo = this.testoNuovoTodo.trim();
+
+            if (testo !== "") {
+                this.toDoList.push({
+                    text: testo,
+                    done: false,
+                })
+            }
+            else
+                return
+        }
+
+    },
 
 
 });
