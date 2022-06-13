@@ -58,7 +58,12 @@ const sliderVue = new Vue({
             }
             else
                 return
+        },
+
+        rimuoviTodo: function (indice) {
+            this.toDoList.splice(indice , 1);
         }
+
 
     },
 

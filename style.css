@@ -21,3 +21,10 @@ body {
     border-radius: 15px;
     font-weight: bold;
 }
+
+
+svg {
+    fill: red;
+    width: 30px;
+    height: 30px;
+}
