@@ -12,12 +12,13 @@
 <body>
     
     <div id="app">
+        
         <div class="container todo">
-
+            <h1>to do's list</h1>
 
             <ul class="list-group w-50">
                 <li class="list-group-item d-flex justify-content-between my-1 align-items-center" 
-                :class="{'text-decoration-line-through' : task.done}" 
+                :class="{'text-decoration-line-through' : task.done , 'todotext' : !task.done}" 
                 v-for="(task,i) in toDoList">{{task.text}}
                 <div class="w-25 d-flex justify-content-evenly align-items-center">
                     <input v-model="task.done" class="form-check-input rounded-circle ordine-2" type="checkbox" value="" id="flexCheckChecked" checked>
